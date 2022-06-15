@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Calculate">
+    <lightning-input label="Enter First number" onchange={FirstNumber} value={Num1}></lightning-input>
+    <lightning-input label="Enter Second number" onchange={SecondNumber} value={Num2}></lightning-input>
+    <lightning-input label="Enter Third number" onchange={ThirdNumber} value={Num3}></lightning-input>
+    <lightning-button-group>
+        <lightning-button label="Calculate" onclick={cal}></lightning-button>
+        <lightning-button label="Clear" onclick={clear}></lightning-button>
+    </lightning-button-group>
+</lightning-card>
+</template>
