@@ -1,0 +1,17 @@
+<template>
+   <lightning-card title="loop and array with for:each ">
+        <template for:each={cities} for:item=a>
+           <!-- {a};-->
+            <p key={a}>{a}</p>
+        </template>
+   </lightning-card> 
+
+********************+++++++++++++++++++++++++++++++++++++++++++*****************************************
+<lightning-card title="loop and array with iteration">
+    <template iterator:item={cities}>
+        <p key={item.value}>{item.value}</p>
+    </template>
+</lightning-card>
+
+
+</template>
